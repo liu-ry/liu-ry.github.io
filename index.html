@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A bilingual GitHub personal homepage for Li Ruyuan."
+    />
+    <title>Li Ruyuan | GitHub Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">LR</span>
+        <span class="brand-text" data-i18n="brand">刘若源</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="navAbout">关于</a>
+        <a href="#work" data-i18n="navWork">经历</a>
+        <a href="#projects" data-i18n="navProjects">项目</a>
+        <a href="#contact" data-i18n="navContact">联系</a>
+      </nav>
+
+      <div class="controls" aria-label="Display controls">
+        <div class="lang-switch" aria-label="Switch language" role="group">
+          <button class="lang-btn" data-lang="zh" type="button" aria-label="Switch to Chinese">
+            中
+          </button>
+          <button class="lang-btn" data-lang="en" type="button" aria-label="Switch to English">
+            EN
+          </button>
+        </div>
+        <button class="control-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top" class="page-shell">
+      <section class="hero" id="about" aria-labelledby="hero-title">
+        <div class="hero-main reveal">
+          <p class="eyebrow" data-i18n="eyebrow">Independent builder / AI systems / visual tools</p>
+          <h1 id="hero-title" data-i18n="heroTitle">把模型、界面和实验系统连成一体。</h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            我做偏研究工程向的产品与工具：机器人学习、交互式数据面板、实验工作流，以及能真的被长期使用的开发体验。
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="button primary"
+              href="https://github.com/liu-ry"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="githubButton"
+              >查看 GitHub</a
+            >
+            <a class="button secondary" href="mailto:li.ruyuan@example.com" data-i18n="mailButton"
+              >发送邮件</a
+            >
+          </div>
+
+          <div class="hero-facts">
+            <article>
+              <span class="fact-label" data-i18n="factOneLabel">当前关注</span>
+              <strong data-i18n="factOneValue">机器人策略评估与可视化</strong>
+            </article>
+            <article>
+              <span class="fact-label" data-i18n="factTwoLabel">工作方式</span>
+              <strong data-i18n="factTwoValue">快速原型 + 稳定落地</strong>
+            </article>
+            <article>
+              <span class="fact-label" data-i18n="factThreeLabel">所在时区</span>
+              <strong data-i18n="factThreeValue">UTC+8 / Remote Friendly</strong>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-side reveal">
+          <div class="portrait-card">
+            <div class="portrait-top">
+              <img
+                class="avatar"
+                src="https://github.com/liu-ry.png"
+                alt="Li Ruyuan GitHub avatar"
+                width="144"
+                height="144"
+              />
+              <div class="status-pill">
+                <span class="status-dot"></span>
+                <span data-i18n="statusText">Available for selected collaborations</span>
+              </div>
+            </div>
+
+            <div class="identity">
+              <p class="mini-label" data-i18n="profileRole">研究工程 / Full Stack / Open Source</p>
+              <h2 data-i18n="profileName">刘若源</h2>
+              <p class="muted" data-i18n="profileLocation">上海，中国</p>
+            </div>
+
+            <div class="spotlight">
+              <span class="mini-label" data-i18n="spotlightLabel">Current Build</span>
+              <p data-i18n="spotlightText">
+                一个把实验回放、轨迹筛选、视频片段和奖励曲线放进同一界面的调试工作台。
+              </p>
+            </div>
+
+            <div class="stack-list">
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>TypeScript</span>
+              <span>FastAPI</span>
+              <span>Data Viz</span>
+              <span>Robotics</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="signal-grid reveal" aria-label="Highlights">
+        <article class="signal-card">
+          <span class="signal-index">01</span>
+          <strong>32+</strong>
+          <p data-i18n="metricRepos">公开仓库，偏工具型与实验型项目。</p>
+        </article>
+        <article class="signal-card accent">
+          <span class="signal-index">02</span>
+          <strong>4</strong>
+          <p data-i18n="metricYears">年跨研究与产品的工程经验。</p>
+        </article>
+        <article class="signal-card">
+          <span class="signal-index">03</span>
+          <strong>18k</strong>
+          <p data-i18n="metricRuns">小时级日志、回放与实验数据处理经验。</p>
+        </article>
+        <article class="signal-card">
+          <span class="signal-index">04</span>
+          <strong data-i18n="metricModeValue">Bilingual</strong>
+          <p data-i18n="metricModeText">中英文内容同步维护，适合面向国际协作展示。</p>
+        </article>
+      </section>
+
+      <section class="section section-split" id="work">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="workEyebrow">Experience</p>
+          <h2 data-i18n="workTitle">经历不是堆职责，更是持续把抽象问题变成可用系统。</h2>
+          <p class="section-copy" data-i18n="workIntro">
+            过去几年主要在研究工程、数据工具和面向开发者的体验之间切换，工作内容通常从算法试验一路落到可视化与交付。
+          </p>
+        </div>
+
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-head">
+                <span class="time" data-i18n="workOneTime">2024 - Now</span>
+                <h3 data-i18n="workOneTitle">Embodied AI Engineer</h3>
+              </div>
+              <p class="org" data-i18n="workOneOrg">North Harbor Robotics Lab</p>
+              <p data-i18n="workOneBody">
+                负责训练数据回放、策略评测可视化和实验异常定位工具，让研究团队能在一套界面里完成观测、比较和复盘。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-head">
+                <span class="time" data-i18n="workTwoTime">2022 - 2024</span>
+                <h3 data-i18n="workTwoTitle">Creative Technologist</h3>
+              </div>
+              <p class="org" data-i18n="workTwoOrg">Independent Product Studio</p>
+              <p data-i18n="workTwoBody">
+                为研究团队和早期项目做内部平台，从数据上传、实验记录、指标看板到项目主页，强调速度、可读性和交互完整度。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-head">
+                <span class="time" data-i18n="workThreeTime">2020 - 2022</span>
+                <h3 data-i18n="workThreeTitle">Software Engineer</h3>
+              </div>
+              <p class="org" data-i18n="workThreeOrg">Open Tools Collective</p>
+              <p data-i18n="workThreeBody">
+                参与自动化脚本平台和前端分析面板开发，重点处理复杂状态展示、权限流与跨端协作体验。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="projectsEyebrow">Selected Work</p>
+          <h2 data-i18n="projectsTitle">项目更像一组作品，而不是仓库列表。</h2>
+        </div>
+
+        <div class="project-layout">
+          <article class="project-feature reveal">
+            <div class="project-meta">
+              <span data-i18n="projectFeatureTag">Featured Project</span>
+              <a href="https://github.com/liu-ry" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <h3 data-i18n="projectOneTitle">Replay Atlas</h3>
+            <p data-i18n="projectOneDesc">
+              面向机器人实验的回放浏览器。把轨迹筛选、关键帧检索、奖励变化和视频片段放在同一屏里，降低调参时的信息切换成本。
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>SQLite</span>
+              <span>UI Systems</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span data-i18n="projectTwoLabel">Toolkit</span>
+              <a href="https://github.com/liu-ry" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+            <h3 data-i18n="projectTwoTitle">Policy Bench Deck</h3>
+            <p data-i18n="projectTwoDesc">
+              一套用于对比多任务策略表现的轻量工具，强调结果导出、报告生成和实验间横向阅读体验。
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span data-i18n="projectThreeLabel">Site System</span>
+              <a href="https://github.com/liu-ry" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+            <h3 data-i18n="projectThreeTitle">Signal Page</h3>
+            <p data-i18n="projectThreeDesc">
+              为个人研究和公开写作建立的双语主页系统，兼顾视觉呈现、信息密度与长期维护成本。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section dual-grid">
+        <article class="note-panel reveal" id="writing">
+          <p class="eyebrow" data-i18n="writingEyebrow">Writing</p>
+          <h2 data-i18n="writingTitle">一些正在写的主题</h2>
+          <div class="writing-list">
+            <a href="#" data-i18n="postOne">如何设计适合研究团队使用的实验回放界面</a>
+            <a href="#" data-i18n="postTwo">机器人数据链路里最容易被忽略的可观察性问题</a>
+            <a href="#" data-i18n="postThree">个人技术主页为什么不该只是简历截图</a>
+          </div>
+        </article>
+
+        <article class="capability-panel reveal">
+          <p class="eyebrow" data-i18n="skillsEyebrow">Capabilities</p>
+          <h2 data-i18n="skillsTitle">我通常在这些交叉点工作</h2>
+          <div class="capability-list">
+            <div>
+              <span class="cap-index">A1</span>
+              <p data-i18n="skillOne">研究工具与实验平台</p>
+            </div>
+            <div>
+              <span class="cap-index">A2</span>
+              <p data-i18n="skillTwo">数据可视化与交互界面</p>
+            </div>
+            <div>
+              <span class="cap-index">A3</span>
+              <p data-i18n="skillThree">Python 服务与自动化流程</p>
+            </div>
+            <div>
+              <span class="cap-index">A4</span>
+              <p data-i18n="skillFour">双语技术表达与信息设计</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="contact-section reveal" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">如果你在做有实验复杂度、又需要好界面的东西，我们可以聊聊。</h2>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:li.ruyuan@example.com">Email</a>
+          <a href="https://github.com/liu-ry" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://x.com/" target="_blank" rel="noreferrer">X / Twitter</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span data-i18n="footer">© 2026 Li Ruyuan. Designed as a bilingual GitHub Pages homepage.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
