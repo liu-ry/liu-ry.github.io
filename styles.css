@@ -247,9 +247,50 @@ h3 {
 
 .social-list {
   flex-wrap: wrap;
-  gap: 10px 14px;
+  gap: 10px 10px;
   margin: 16px 0 10px;
   font-size: 15px;
+}
+
+.social-list a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 82%, var(--accent-soft));
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(31, 31, 27, 0.06);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease;
+}
+
+.social-list a::after {
+  content: "↗";
+  margin-left: 8px;
+  font-size: 12px;
+  color: var(--accent);
+  opacity: 0.9;
+}
+
+.social-list a:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+  background: var(--accent-soft);
+  box-shadow: 0 12px 22px rgba(31, 31, 27, 0.1);
+  color: var(--accent);
+}
+
+.social-list a:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 55%, white);
+  outline-offset: 2px;
 }
 
 .cv-link {
@@ -271,6 +312,11 @@ h3 {
 
 .sidebar-card {
   padding: 14px 16px;
+}
+
+.sidebar-card p {
+  margin: 0;
+  white-space: pre-line;
 }
 
 .content {
@@ -348,6 +394,20 @@ h3 {
   padding: 16px;
 }
 
+.project-media {
+  margin-top: 14px;
+}
+
+.project-media video {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 2px);
+  background: #000;
+  box-shadow: var(--shadow);
+}
+
 .project-mark {
   display: grid;
   width: 44px;
@@ -389,6 +449,16 @@ h3 {
 :root[data-style="tech"] .section.two-col > div,
 :root[data-style="tech"] .sidebar-card {
   background: var(--surface);
+}
+
+:root[data-style="tech"] .social-list a {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+:root[data-style="tech"] .social-list a:hover {
+  background: rgba(255, 122, 41, 0.12);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
 }
 
 :root[data-style="tech"] .layout {

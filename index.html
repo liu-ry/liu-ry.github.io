@@ -7,22 +7,21 @@
       name="description"
       content="A bilingual personal homepage with academic and tech presentation modes."
     />
-    <title>Li Ruyuan | Homepage</title>
+    <title>Liu Renyu | Homepage</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Back to top">
-        <span class="brand-mark">LR</span>
-        <span class="brand-text" data-i18n="brand">刘若源</span>
+        <span class="brand-mark">LRY</span>
+        <span class="brand-text" data-i18n="brand">刘仁雨</span>
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#about" data-i18n="navAbout">简介</a>
-        <a href="#news" data-i18n="navNews">动态</a>
-        <a href="#publications" data-i18n="navPublications">论文</a>
+        <a href="#news" data-i18n="navNews">经历</a>
         <a href="#projects" data-i18n="navProjects">项目</a>
-        <a href="#contact" data-i18n="navContact">联系</a>
+        <a href="#publications" data-i18n="navPublications">论文</a>
+        <a href="#patents" data-i18n="navPatents">专利</a>
       </nav>
 
       <div class="controls" aria-label="Display controls">
@@ -42,27 +41,28 @@
         <aside class="sidebar" id="about">
           <img
             class="avatar"
-            src="https://github.com/liu-ry.png"
-            alt="Li Ruyuan GitHub avatar"
+            src="assets/images/avatar.jpg"
+            alt="Liu Renyu avatar"
             width="220"
             height="220"
           />
-          <h1 data-i18n="name">刘若源</h1>
-          <p class="headline" data-i18n="headline">Robotics & Embodied AI Researcher / Research Engineer</p>
-          <p class="meta-line" data-i18n="affiliation">Independent Research Builder, based in Shanghai</p>
-          <p class="meta-line" data-i18n="email">li.ruyuan@example.com</p>
+          <h1 data-i18n="name">刘仁雨</h1>
+          <p class="headline" data-i18n="headline">机器人技术与具身智能算法工程师</p>
+          <p class="meta-line" data-i18n="affiliation">中国 江苏 苏州</p>
+          <p class="meta-line" data-i18n="education">苏州大学 电子与通信工程硕士</p>
+          <p class="meta-line" data-i18n="email">renyu6708@gmail.com</p>
 
           <div class="social-list">
-            <a href="https://github.com/liu-ry" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Scholar</a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a>
+            <a href="https://scholar.google.com/citations?user=zMzItEcAAAAJ&hl=en" target="_blank" rel="noreferrer">Scholar</a>
+            <a href="https://blog.csdn.net/qq_43361250?type=blog" target="_blank" rel="noreferrer">CSDN</a>
+            <a href="https://xhslink.com/m/83AZLfBgo3j" target="_blank" rel="noreferrer">小红书</a>
           </div>
 
           <a class="cv-link" href="#" data-i18n="cvLink">Curriculum Vitae</a>
 
           <div class="sidebar-card">
             <p data-i18n="focusText">
-              关注通用机器人操作、实验数据系统、视觉-触觉学习，以及把研究原型转成可复现工具链。
+              关注视觉算法、diffusion、VLA、WM，关注视触觉/力觉等模态的应用，关注 UMI、EGO 等数采形式以及跨本体研究进展。
             </p>
           </div>
         </aside>
@@ -70,24 +70,113 @@
         <div class="content">
           <section class="section intro-section">
             <p data-i18n="introOne">
-              我目前专注于通用机器人操作与研究工程系统，工作内容横跨数据采集、策略训练、回放诊断、实验可视化和公开展示页面。
+              目前专注于 VLA、WM、DP 等具身算法的研究、探索及部署使用。已在越疆、瑞尔曼、UR、珞石、天机等机械臂，大寰、Robotiq、知行等夹爪，灵心巧手、兆威等灵巧手上进行算法的真机部署与调试。
             </p>
             <p data-i18n="introTwo">
-              过去几年里，我持续在“研究想法如何真正落地”为团队工具这个问题上投入精力，尤其关注双臂操作、实验观测性、视觉-触觉融合和数据驱动控制。
+              过去的一段时间，持续在 VLA 多任务泛化、UMI/EGO 等无本体数采、跨本体应用、触觉模态融合等方向进行探索。
             </p>
             <p class="highlight-callout" data-i18n="introThree">
-              目前也在持续寻找有趣的研究合作与系统型项目，特别是机器人学习、交互式实验工具和学术内容展示方向。
+              当前正在探索真机强化学习后训练，以提升任务成功率，实现人类在环(DAgger介入)的数据飞轮闭环。
             </p>
           </section>
 
           <section class="section" id="news">
             <h2 data-i18n="newsTitle">News</h2>
             <ul class="bullet-list">
-              <li data-i18n="newsOne">2026-05: 一篇关于双臂操作评测系统的论文被 RSS Workshop 接收。</li>
-              <li data-i18n="newsTwo">2026-03: 发布新的实验回放工具链，用于机器人训练日志筛选与视频诊断。</li>
-              <li data-i18n="newsThree">2025-12: 受邀在研究工程分享中介绍可观测性驱动的机器人实验平台设计。</li>
-              <li data-i18n="newsFour">2025-09: 一项视觉-触觉联合策略学习工作完成开源整理。</li>
+              <li data-i18n="newsOne">2025-09～至今: 上海纬钛科技有限公司，算法工程师。</li>
+              <li data-i18n="newsTwo">2024-06～2025-09: 苏州天准科技股份有限公司，算法工程师。</li>
+              <li data-i18n="newsThree">2021-07～2024-06: 广联达科技有限公司，算法工程师。</li>
             </ul>
+          </section>
+
+          <section class="section" id="projects">
+            <h2 data-i18n="projectsTitle">Projects</h2>
+            <div class="project-list">
+              <article class="project-item">
+                <div class="project-mark">01</div>
+                <div>
+                  <h3 data-i18n="projectOneTitle">GROOT N1.5</h3>
+                  <p data-i18n="projectOneDesc">面向基础 pick-and-place 任务的策略验证，聚焦抓取稳定性、放置精度与整套动作链路的可靠执行。</p>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/01/demo.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </article>
+              <article class="project-item">
+                <div class="project-mark">02</div>
+                <div>
+                  <h3 data-i18n="projectTwoTitle">OpenPI</h3>
+                  <p data-i18n="projectTwoDesc">围绕 pick-and-place 与 peg-in-hole 两类任务开展部署，重点观察策略在位姿偏差与接触阶段下的泛化表现。</p>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/02/demo.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </article>
+              <article class="project-item">
+                <div class="project-mark">03</div>
+                <div>
+                  <h3 data-i18n="projectThreeTitle">DP</h3>
+                  <p data-i18n="projectThreeDesc">用于 USB insertion 任务的扩散策略部署，关注接触阶段的对位精度、插入稳定性与任务成功率。</p>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/03/demo.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </article>
+              <article class="project-item">
+                <div class="project-mark">04</div>
+                <div>
+                  <h3 data-i18n="projectFourTitle">ACT</h3>
+                  <p data-i18n="projectFourDesc">在积木堆叠任务上进行策略复现与调试，重点验证时序控制、末端稳定性与连续动作衔接。</p>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/04/demo.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </article>
+              <article class="project-item">
+                <div class="project-mark">05</div>
+                <div>
+                  <h3 data-i18n="projectFiveTitle">RL + OpenPI + DAgger</h3>
+                  <p data-i18n="projectFiveDesc">面向 insertion 任务结合强化学习与 DAgger 进行后训练，持续优化真机表现与数据闭环效率。</p>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/05/demo.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </article>
+              <article class="project-item">
+                <div class="project-mark">06</div>
+                <div>
+                  <h3 data-i18n="projectSixTitle">UMI / 万象套件</h3>
+                  <p data-i18n="projectSixDesc">基于 UMI 与万象套件开展擦拭、花瓶抓放与堆叠等任务，探索无本体数采到真机部署的迁移路径。</p>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/06/demo-1.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/06/demo-2.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </article>
+              <article class="project-item">
+                <div class="project-mark">07</div>
+                <div>
+                  <h3 data-i18n="projectSevenTitle">VT-Touch / Parquet</h3>
+                  <p data-i18n="projectSevenDesc">面向视觉-触觉联合感知的策略探索，关注接触判断、细粒度操作以及跨场景迁移能力。</p>
+                </div>
+              </article>
+            </div>
           </section>
 
           <section class="section" id="publications">
@@ -96,12 +185,11 @@
             <article class="publication">
               <div class="pub-thumb">01</div>
               <div class="pub-body">
-                <h3 data-i18n="pubOneTitle">Dexterous Replay Studio: Observability-first Evaluation for Bimanual Manipulation</h3>
-                <p class="authors" data-i18n="pubOneAuthors">Li Ruyuan, Wenqi Zhou, Minghao Chen, Yiting Xu</p>
-                <p class="venue" data-i18n="pubOneVenue">RSS Workshop 2026</p>
+                <h3 data-i18n="pubOneTitle">Machine-Learning-based Aortic Stenosis Detection for Electronic Stethoscope</h3>
+                <p class="authors" data-i18n="pubOneAuthors">Zhen Shi, Neng Dai, Renyu Liu, Jiajun Wang, Shengsheng Cai, Nan Hu</p>
+                <p class="venue" data-i18n="pubOneVenue">2021 13th International Conference on Wireless Communications and Signal Processing (WCSP)</p>
                 <div class="inline-links">
-                  <a href="#" data-i18n="paperLink">[paper]</a>
-                  <a href="#" data-i18n="projectLink">[project]</a>
+                  <a href="https://www.researchgate.net/publication/356705186_Machine-Learning-based_Aortic_Stenosis_Detection_for_Electronic_Stethoscope" target="_blank" rel="noreferrer" data-i18n="paperLink">[paper]</a>
                 </div>
               </div>
             </article>
@@ -109,12 +197,11 @@
             <article class="publication">
               <div class="pub-thumb">02</div>
               <div class="pub-body">
-                <h3 data-i18n="pubTwoTitle">Vision-Tactile Coordination for Data-efficient Robotic Transfer</h3>
-                <p class="authors" data-i18n="pubTwoAuthors">Li Ruyuan, Hao Lin, Xinyu Deng, Shuo Ren</p>
-                <p class="venue" data-i18n="pubTwoVenue">ICRA 2026</p>
+                <h3 data-i18n="pubTwoTitle">Detection of Adventitious Respiratory Sounds based on Convolutional Neural Network</h3>
+                <p class="authors" data-i18n="pubTwoAuthors">Renyu Liu, Shengsheng Cai, Kexin Zhang, Nan Hu</p>
+                <p class="venue" data-i18n="pubTwoVenue">2019 4th International Conference on Intelligent Informatics and Biomedical Sciences (ICIIBMS)</p>
                 <div class="inline-links">
-                  <a href="#" data-i18n="paperLink">[paper]</a>
-                  <a href="#" data-i18n="projectLink">[project]</a>
+                  <a href="https://www.researchgate.net/publication/339262254_Detection_of_Adventitious_Respiratory_Sounds_based_on_Convolutional_Neural_Network" target="_blank" rel="noreferrer" data-i18n="paperLink">[paper]</a>
                 </div>
               </div>
             </article>
@@ -122,78 +209,50 @@
             <article class="publication">
               <div class="pub-thumb">03</div>
               <div class="pub-body">
-                <h3 data-i18n="pubThreeTitle">From Logs to Interfaces: Building Reproducible Tooling for Robot Learning Teams</h3>
-                <p class="authors" data-i18n="pubThreeAuthors">Li Ruyuan, Jiayi Sun, Ke Chen</p>
-                <p class="venue" data-i18n="pubThreeVenue">RA-L 2025</p>
+                <h3 data-i18n="pubThreeTitle">The Automatic Repairing Method Addressing Clipping Distortions and Frictional Noises in Electronic Stethoscope</h3>
+                <p class="authors" data-i18n="pubThreeAuthors">Ning Zhou, Jiajun Wang, Bing Sun, Renyu Liu, Nan Hu</p>
+                <p class="venue" data-i18n="pubThreeVenue">IEEE Conference Paper, 2019</p>
                 <div class="inline-links">
-                  <a href="#" data-i18n="paperLink">[paper]</a>
-                  <a href="#" data-i18n="projectLink">[project]</a>
+                  <a href="https://minttihealth.com/the-automatic-repairing-method-addressing-clipping-distortions-and-frictional-noises-in-electronic-stethoscope/" target="_blank" rel="noreferrer" data-i18n="paperLink">[paper]</a>
                 </div>
               </div>
             </article>
           </section>
 
-          <section class="section" id="projects">
-            <h2 data-i18n="projectsTitle">Projects</h2>
-            <div class="project-list">
-              <article class="project-item">
-                <div class="project-mark">A</div>
-                <div>
-                  <h3 data-i18n="projectOneTitle">Replay Atlas</h3>
-                  <p data-i18n="projectOneDesc">一个把训练回放、关键帧、奖励变化和视频片段放在一起的本地实验浏览器。</p>
+          <section class="section" id="patents">
+            <h2 data-i18n="patentsTitle">Patents</h2>
+
+            <article class="publication">
+              <div class="pub-thumb">01</div>
+              <div class="pub-body">
+                <h3 data-i18n="patentOneTitle">一种电子听诊器的肺部啰音人工智能实时分类方法、系统、装置及可读存储介质</h3>
+                <p class="authors" data-i18n="patentOneAuthors">蔡盛盛，胡南，刘仁雨，徐兴国</p>
+                <p class="venue" data-i18n="patentOneVenue">CN110970042A, 申请公布日 2020-04-07</p>
+                <div class="inline-links">
+                  <a href="https://patents.google.com/patent/CN110970042A/zh" target="_blank" rel="noreferrer" data-i18n="patentLink">[patent]</a>
                 </div>
-              </article>
-              <article class="project-item">
-                <div class="project-mark">B</div>
-                <div>
-                  <h3 data-i18n="projectTwoTitle">Policy Bench Deck</h3>
-                  <p data-i18n="projectTwoDesc">用于多任务策略评测、结果导出与横向阅读的轻量研究工具包。</p>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="pub-thumb">02</div>
+              <div class="pub-body">
+                <h3 data-i18n="patentTwoTitle">一种电子听诊器背景音干扰实时自动抵消方法</h3>
+                <p class="authors" data-i18n="patentTwoAuthors">蔡盛盛，胡南，刘仁雨，石珍，徐兴国</p>
+                <p class="venue" data-i18n="patentTwoVenue">CN112190280A, 申请公布日 2021-01-08</p>
+                <div class="inline-links">
+                  <a href="https://patents.google.com/?q=CN112190280A" target="_blank" rel="noreferrer" data-i18n="patentLink">[patent]</a>
                 </div>
-              </article>
-              <article class="project-item">
-                <div class="project-mark">C</div>
-                <div>
-                  <h3 data-i18n="projectThreeTitle">Signal Page</h3>
-                  <p data-i18n="projectThreeDesc">服务于个人研究展示与公开写作的双语静态站点系统。</p>
-                </div>
-              </article>
-            </div>
+              </div>
+            </article>
           </section>
 
-          <section class="section two-col">
-            <div>
-              <h2 data-i18n="teachingTitle">Teaching</h2>
-              <ul class="bullet-list">
-                <li data-i18n="teachOne">2026: Guest Lecturer, Research Tooling for Robot Learning</li>
-                <li data-i18n="teachTwo">2025: Teaching Assistant, Embodied Intelligence Seminar</li>
-                <li data-i18n="teachThree">2024: Internal Workshop, Experiment Visualization for Robotics</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 data-i18n="talksTitle">Recent Talks</h2>
-              <ul class="bullet-list">
-                <li data-i18n="talkOne">2026/04: Data Interfaces for General Robotic Manipulation</li>
-                <li data-i18n="talkTwo">2025/11: Observability and Replay in Embodied AI Systems</li>
-                <li data-i18n="talkThree">2025/08: From Prototypes to Durable Research Tools</li>
-              </ul>
-            </div>
-          </section>
-
-          <section class="section" id="contact">
-            <h2 data-i18n="serviceTitle">Public Services</h2>
-            <ul class="bullet-list">
-              <li data-i18n="serviceOne">Reviewer for robotics and machine learning venues.</li>
-              <li data-i18n="serviceTwo">Organizer for small research tooling and embodied AI reading groups.</li>
-              <li data-i18n="serviceThree">Maintainer of internal experiment visualization and evaluation utilities.</li>
-            </ul>
-          </section>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <span data-i18n="footer">© 2026 Li Ruyuan. Bilingual academic/tech homepage.</span>
+      <span data-i18n="footer">© 2026 Liu Renyu. Bilingual academic/tech homepage.</span>
     </footer>
 
     <script src="script.js"></script>
