@@ -13,10 +13,6 @@ const translations = {
     education: "苏州大学 电子与通信工程硕士",
     email: "renyu6708@gmail.com",
     cvLink: "Curriculum Vitae",
-    visitTitle: "访问统计",
-    visitMonthLabel: "当月访问",
-    visitTotalLabel: "总计访问",
-    visitNote: "当前按页面打开次数统计；显示“当月访问量”和“总计访问量”，不记录访客个人信息。",
     focusText:
       "关注视觉算法、diffusion、VLA、WM\n关注视触觉/力觉等模态的应用\n关注 UMI、EGO 等数采形式以及跨本体研究进展。",
     introOne:
@@ -86,11 +82,6 @@ const translations = {
     education: "M.Eng. in Electronics and Communication Engineering, Soochow University",
     email: "renyu6708@gmail.com",
     cvLink: "Curriculum Vitae",
-    visitTitle: "Visitor Stats",
-    visitMonthLabel: "This Month",
-    visitTotalLabel: "All Time",
-    visitNote:
-      "Counts page opens only and shows this month plus all-time totals without storing personal visitor details.",
     focusText:
       "Interested in vision algorithms, diffusion, VLA, and WM\nInterested in vision-tactile, force-aware, and related multimodal applications\nInterested in UMI, EGO, and progress in cross-embodiment data collection",
     introOne:
@@ -153,76 +144,9 @@ const translations = {
 const root = document.documentElement;
 const langButtons = document.querySelectorAll(".lang-btn");
 const styleButtons = document.querySelectorAll(".style-btn");
-const visitMonthNode = document.querySelector("#visit-count-month");
-const visitTotalNode = document.querySelector("#visit-count-total");
 
 const savedLang = localStorage.getItem("language") || "zh";
 const savedStyle = localStorage.getItem("page_style") || "academic";
-
-const analyticsConfig = {
-  // Replace with your GoatCounter site code, for example: "liurenyu"
-  goatcounterCode: "liu-ry",
-};
-
-function setVisitCounts(monthValue, totalValue) {
-  if (visitMonthNode) {
-    visitMonthNode.textContent = monthValue;
-  }
-
-  if (visitTotalNode) {
-    visitTotalNode.textContent = totalValue;
-  }
-}
-
-function getGoatcounterBaseUrl() {
-  const { goatcounterCode } = analyticsConfig;
-  if (!goatcounterCode) {
-    return "";
-  }
-
-  return `https://${goatcounterCode}.goatcounter.com`;
-}
-
-function loadGoatcounterTracker(baseUrl) {
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = "https://gc.zgo.at/count.js";
-  script.dataset.goatcounter = `${baseUrl}/count`;
-  document.body.appendChild(script);
-}
-
-async function fetchGoatcounterCount(url) {
-  const response = await fetch(url);
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch counter: ${response.status}`);
-  }
-
-  const data = await response.json();
-  return data.count || "--";
-}
-
-async function initializeVisitorStats() {
-  const baseUrl = getGoatcounterBaseUrl();
-
-  if (!baseUrl) {
-    setVisitCounts("待配置", "待配置");
-    return;
-  }
-
-  loadGoatcounterTracker(baseUrl);
-
-  try {
-    const [monthCount, totalCount] = await Promise.all([
-      fetchGoatcounterCount(`${baseUrl}/counter/TOTAL.json?start=month`),
-      fetchGoatcounterCount(`${baseUrl}/counter/TOTAL.json`),
-    ]);
-
-    setVisitCounts(monthCount, totalCount);
-  } catch (error) {
-    setVisitCounts("--", "--");
-  }
-}
 
 function setActiveButtons(buttons, activeValue, attributeName) {
   buttons.forEach((button) => {
@@ -267,4 +191,3 @@ styleButtons.forEach((button) => {
 
 applyLanguage(savedLang);
 applyStyle(savedStyle);
-initializeVisitorStats();
