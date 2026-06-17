@@ -45,27 +45,34 @@ const translations = {
     patentTwoVenue: "CN112190280A, 申请公布日 2021-01-08",
     patentLink: "[patent]",
     projectsTitle: "项目",
-    projectOneTitle: "GROOT N1.5",
+    projectOneTitle: "VLA微调+RL后训练",
     projectOneDesc:
-      "面向基础 pick-and-place 任务的策略验证，聚焦抓取稳定性、放置精度与整套动作链路的可靠执行。",
-    projectTwoTitle: "OpenPI",
+      "基于PI0.5/PI*0.6基座VLA模型，搭建预训练+强化学习后训练的真机迭代训练范式。面向机器人长程规划与精细化操控难题，开展真机强化学习与HIL人机在环训练；引入DAgger交互式纠错机制，优化策略rollout轨迹数据质量，构建高质量数据筛选、迭代更新的闭环数据飞轮，显著提升复杂具身任务的综合完成率。",
+    projectOneTags: ["PI0.5", "PI*0.6", "真机强化学习", "HIL", "DAgger", "UMI", "数据飞轮"],
+    projectTwoTitle: "UMI无本体采集与跨本体迁移方案研发",
     projectTwoDesc:
-      "围绕 pick-and-place 与 peg-in-hole 两类任务开展部署，重点观察策略在位姿偏差与接触阶段下的泛化表现。",
-    projectThreeTitle: "DP",
+      "深度参与通用无本体操作采集设备UMI的迭代研发与工程化落地，参与传感器选型、数据同步策略及标准化落盘规则制定。基于UR5e机械臂完成跨本体适配与坐标系对齐方案，探究无本体示教数据向实体机械臂的迁移范式；落地花瓶擦拭、黑板擦拭、方块堆叠、多类物品分拣等多样化实操场景，验证UMI数据在跨本体模仿学习中的泛化能力。",
+    projectTwoTags: ["UMI", "跨本体迁移", "UR", "坐标系", "模仿学习"],
+    projectThreeTitle: "仿真合成触觉Encoder的精细化操控研究",
     projectThreeDesc:
-      "用于 USB insertion 任务的扩散策略部署，关注接触阶段的对位精度、插入稳定性与任务成功率。",
-    projectFourTitle: "ACT",
+      "探究仿真合成触觉模态对真机精细模仿学习的增益效果。基于Isasc-lab仿真平台构建大规模合成触觉数据集，针对性训练专属触觉编码Encoder；将预训练触觉Encoder迁移至天机Marvin机械臂+Robtiq夹爪真机环境，赋能Diffusion Policy策略网络，解决高难度USB精密插拔类操作痛点，提升模型对接触状态的感知能力。",
+    projectThreeTags: ["Diffusion Policy", "USB精细插拔", "触觉Encoder", "模仿学习"],
+    projectFourTitle: "视触觉多模态融合VLA模型部署探索",
     projectFourDesc:
-      "在积木堆叠任务上进行策略复现与调试，重点验证时序控制、末端稳定性与连续动作衔接。",
-    projectFiveTitle: "RL + OpenPI + DAgger",
+      "面向OpenPI/PI0.5 VLA模型，开展触觉模态融合接入研究。以物体抓取放置、衣物折叠两大典型居家任务为场景，探索触觉模态的使用，并基于YAM双臂机械臂完成真机部署；通过补充接触维度感知信息，弥补纯视觉方案感知短板，一定程度上提升作业的任务成功率。",
+    projectFourTags: ["OpenPI", "PI0.5", "双臂遥操作", "精细插拔", "VLA"],
+    projectFiveTitle: "首个跨构型视触觉数据集构建（数据集发布当时是全球首个）",
     projectFiveDesc:
-      "面向 insertion 任务结合强化学习与 DAgger 进行后训练，持续优化真机表现与数据闭环效率。",
-    projectSixTitle: "UMI / 万象套件",
+      "与上海某机器人企业对接，探讨并梳理数据集场景定义。依托Gel-Sight视触觉传感器，完成居家、医疗、仓储、商超、厨房五大场景拆解；规范全场景任务范式、细分多级子任务，并沉淀标准化机器人原子操作技能库，为视触觉VLA模型的训练与评测提供高质量数据底座。",
+    projectFiveTags: ["Gel-Sight", "视触觉", "数据集", "多构型", "原子技能"],
+    projectSixTitle: "基于ACT算法的低成本机械臂策略验证",
     projectSixDesc:
-      "基于 UMI 与万象套件开展擦拭、花瓶抓放与堆叠等任务，探索无本体数采到真机部署的迁移路径。",
-    projectSevenTitle: "VT-Touch / Parquet",
+      "居家小项目：手搓Lerobot的SO-Arm101机械臂，在积木堆叠任务上进行策略复现与调试，重点验证算法在低成本硬件上的时序控制、末端稳定性与连续动作衔接。",
+    projectSixTags: ["ACT", "精细堆叠", "低成本机械臂", "SO-Arm101", "模仿学习"],
+    projectSevenTitle: "真机/仿真混合数据训练范式探究",
     projectSevenDesc:
-      "面向视觉-触觉联合感知的策略探索，关注接触判断、细粒度操作以及跨场景迁移能力。",
+      "基于NVIDIA GROOT-N1/N1.5通用机器人基座模型，结合MimicGen自动化数据生成流水线，系统性探究仿真合成数据与真机遥操作数据的融合使用规范。分别完成仿真模型零样本真机部署、不同比例虚实混合数据训练等对照实验，总结适配通用VLA模型的数据配比方案，为高效低成本构建机器人数据集提供标准化方法论。",
+    projectSevenTags: ["GROOT", "仿真合成", "真机", "遥操作", "VLA"],
     footer: "© 2026 Liu Renyu. Bilingual academic/tech homepage.",
   },
   en: {
@@ -116,27 +123,34 @@ const translations = {
     patentTwoVenue: "CN112190280A, publication date 2021-01-08",
     patentLink: "[patent]",
     projectsTitle: "Projects",
-    projectOneTitle: "GROOT N1.5",
+    projectOneTitle: "VLA Fine-Tuning and RL Post-Training",
     projectOneDesc:
-      "Policy validation for basic pick-and-place tasks, focusing on grasp stability, placement accuracy, and reliable end-to-end execution.",
-    projectTwoTitle: "OpenPI",
+      "Built a real-world iterative training paradigm that combines pretraining with reinforcement-learning post-training on PI0.5 and PI*0.6 VLA backbones. Targeted long-horizon planning and fine manipulation with real-robot RL and HIL training, while introducing DAgger-based interactive correction to improve rollout quality and establish a closed-loop data flywheel for filtering and iterative updates.",
+    projectOneTags: ["PI0.5", "PI*0.6", "Real-World RL", "HIL", "DAgger", "UMI", "Data Flywheel"],
+    projectTwoTitle: "UMI Embodiment-Free Collection and Cross-Embodiment Transfer",
     projectTwoDesc:
-      "Deployment around pick-and-place and peg-in-hole tasks, with attention to generalization under pose offsets and contact-rich stages.",
-    projectThreeTitle: "DP",
+      "Deeply participated in the iteration and engineering deployment of UMI, an embodiment-free manipulation data-collection system, including sensor selection, synchronization strategy, and standardized storage rules. Completed cross-embodiment adaptation and coordinate alignment on a UR5e arm, and validated transfer from embodiment-free demonstrations to physical robots across vase wiping, board wiping, block stacking, and item sorting tasks.",
+    projectTwoTags: ["UMI", "Cross-Embodiment", "UR", "Coordinate Frames", "Imitation Learning"],
+    projectThreeTitle: "Fine Manipulation with Synthetic Tactile Encoders",
     projectThreeDesc:
-      "Diffusion-policy deployment for USB insertion, focusing on alignment precision, contact stability, and task success rate.",
-    projectFourTitle: "ACT",
+      "Studied how synthetic tactile modalities can improve fine-grained imitation learning on real robots. Built a large-scale synthetic tactile dataset on the Isasc-lab simulator, trained a dedicated tactile encoder, and transferred it to a Tianji Marvin arm with a Robotiq gripper to enhance a Diffusion Policy network for precise USB insertion and better contact-state awareness.",
+    projectThreeTags: ["Diffusion Policy", "USB Insertion", "Tactile Encoder", "Imitation Learning"],
+    projectFourTitle: "Multimodal Vision-Tactile VLA Deployment",
     projectFourDesc:
-      "Policy reproduction and debugging for block stacking, with emphasis on timing control, end-effector stability, and motion continuity.",
-    projectFiveTitle: "RL + OpenPI + DAgger",
+      "Explored tactile-modality integration for OpenPI and PI0.5 VLA models. Focused on household tasks such as pick-and-place and cloth folding, and deployed the multimodal setup on a YAM dual-arm robot. The added contact-aware signals helped compensate for the perception limits of vision-only pipelines and improved task success rates.",
+    projectFourTags: ["OpenPI", "PI0.5", "Dual-Arm Teleop", "Precise Insertion", "VLA"],
+    projectFiveTitle: "First Cross-Configuration Vision-Tactile Dataset Construction (First of Its Kind Globally at Release)",
     projectFiveDesc:
-      "Post-training for insertion tasks by combining reinforcement learning and DAgger to improve real-world performance and data-loop efficiency.",
-    projectSixTitle: "UMI / Wanxiang Toolkit",
+      "Worked with a robotics company in Shanghai to define dataset scenarios and task taxonomy. Using GelSight vision-tactile sensors, decomposed five domains including home, medical, warehouse, retail, and kitchen settings, then standardized task structures and atomic robot skills to provide a strong data foundation for training and evaluating vision-tactile VLA models. At the time of release, this dataset was the first of its kind globally across configurations.",
+    projectFiveTags: ["GelSight", "Vision-Tactile", "Dataset", "Cross-Configuration", "Atomic Skills"],
+    projectSixTitle: "Low-Cost Robot Policy Validation with ACT",
     projectSixDesc:
-      "Tasks based on UMI and the Wanxiang toolkit, including wiping, vase pick-and-place, and stacking, to explore transfer from embodiment-free data collection to deployment.",
-    projectSevenTitle: "VT-Touch / Parquet",
+      "A personal side project using a self-built SO-Arm101 from LeRobot for policy reproduction and debugging on block stacking. The focus was verifying ACT under low-cost hardware constraints, especially timing control, end-effector stability, and smooth action transitions.",
+    projectSixTags: ["ACT", "Fine Stacking", "Low-Cost Robot", "SO-Arm101", "Imitation Learning"],
+    projectSevenTitle: "Hybrid Real-and-Sim Data Training Paradigms",
     projectSevenDesc:
-      "Exploration of vision-tactile policy learning with attention to contact understanding, fine-grained manipulation, and cross-scenario transfer.",
+      "Based on NVIDIA GROOT-N1/N1.5 and the MimicGen automated data-generation pipeline, systematically studied how to combine synthetic simulation data with real teleoperation data. Ran comparative experiments including zero-shot sim-to-real deployment and mixed-data training at different ratios, then summarized practical data-mixing recipes for general VLA models.",
+    projectSevenTags: ["GROOT", "Synthetic Simulation", "Real Robot", "Teleoperation", "VLA"],
     footer: "© 2026 Liu Renyu. Bilingual academic/tech homepage.",
   },
 };
@@ -146,7 +160,7 @@ const langButtons = document.querySelectorAll(".lang-btn");
 const styleButtons = document.querySelectorAll(".style-btn");
 
 const savedLang = localStorage.getItem("language") || "zh";
-const savedStyle = localStorage.getItem("page_style") || "academic";
+const savedStyle = localStorage.getItem("page_style") || "tech";
 
 function setActiveButtons(buttons, activeValue, attributeName) {
   buttons.forEach((button) => {
@@ -165,6 +179,23 @@ function applyLanguage(language) {
     if (dictionary[key]) {
       node.textContent = dictionary[key];
     }
+  });
+
+  document.querySelectorAll("[data-project-tags]").forEach((node) => {
+    const key = node.dataset.projectTags;
+    const tags = dictionary[key];
+    if (!Array.isArray(tags)) {
+      return;
+    }
+
+    node.replaceChildren(
+      ...tags.map((tag) => {
+        const chip = document.createElement("span");
+        chip.className = "project-tag";
+        chip.textContent = tag;
+        return chip;
+      }),
+    );
   });
 
   setActiveButtons(langButtons, language, "lang");

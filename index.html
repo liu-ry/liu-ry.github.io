@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-style="tech">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -95,68 +95,73 @@
               <article class="project-item">
                 <div class="project-mark">01</div>
                 <div>
-                  <h3 data-i18n="projectOneTitle">GROOT N1.5</h3>
-                  <p data-i18n="projectOneDesc">面向基础 pick-and-place 任务的策略验证，聚焦抓取稳定性、放置精度与整套动作链路的可靠执行。</p>
+                  <h3 data-i18n="projectOneTitle">VLA微调+RL后训练</h3>
+                  <p data-i18n="projectOneDesc">基于PI0.5/PI*0.6基座VLA模型，搭建预训练+强化学习后训练的真机迭代训练范式。面向机器人长程规划与精细化操控难题，开展真机强化学习与HIL人机在环训练；引入DAgger交互式纠错机制，优化策略rollout轨迹数据质量，构建高质量数据筛选、迭代更新的闭环数据飞轮，显著提升复杂具身任务的综合完成率。</p>
                   <div class="project-media">
                     <video controls preload="metadata" playsinline>
                       <source src="assets/videos/01/demo.mp4" type="video/mp4" />
                     </video>
                   </div>
+                  <div class="project-tags" aria-label="Project keywords" data-project-tags="projectOneTags"></div>
                 </div>
               </article>
               <article class="project-item">
                 <div class="project-mark">02</div>
                 <div>
-                  <h3 data-i18n="projectTwoTitle">OpenPI</h3>
-                  <p data-i18n="projectTwoDesc">围绕 pick-and-place 与 peg-in-hole 两类任务开展部署，重点观察策略在位姿偏差与接触阶段下的泛化表现。</p>
+                  <h3 data-i18n="projectTwoTitle">UMI无本体采集与跨本体迁移方案研发</h3>
+                  <p data-i18n="projectTwoDesc">深度参与通用无本体操作采集设备UMI的迭代研发与工程化落地，参与传感器选型、数据同步策略及标准化落盘规则制定。基于UR5e机械臂完成跨本体适配与坐标系对齐方案，探究无本体示教数据向实体机械臂的迁移范式；落地花瓶擦拭、黑板擦拭、方块堆叠、多类物品分拣等多样化实操场景，验证UMI数据在跨本体模仿学习中的泛化能力。</p>
                   <div class="project-media">
                     <video controls preload="metadata" playsinline>
                       <source src="assets/videos/02/demo.mp4" type="video/mp4" />
                     </video>
                   </div>
+                  <div class="project-tags" aria-label="Project keywords" data-project-tags="projectTwoTags"></div>
                 </div>
               </article>
               <article class="project-item">
                 <div class="project-mark">03</div>
                 <div>
-                  <h3 data-i18n="projectThreeTitle">DP</h3>
-                  <p data-i18n="projectThreeDesc">用于 USB insertion 任务的扩散策略部署，关注接触阶段的对位精度、插入稳定性与任务成功率。</p>
+                  <h3 data-i18n="projectThreeTitle">仿真合成触觉Encoder的精细化操控研究</h3>
+                  <p data-i18n="projectThreeDesc">探究仿真合成触觉模态对真机精细模仿学习的增益效果。基于Isasc-lab仿真平台构建大规模合成触觉数据集，针对性训练专属触觉编码Encoder；将预训练触觉Encoder迁移至天机Marvin机械臂+Robtiq夹爪真机环境，赋能Diffusion Policy策略网络，解决高难度USB精密插拔类操作痛点，提升模型对接触状态的感知能力。</p>
                   <div class="project-media">
                     <video controls preload="metadata" playsinline>
                       <source src="assets/videos/03/demo.mp4" type="video/mp4" />
                     </video>
                   </div>
+                  <div class="project-tags" aria-label="Project keywords" data-project-tags="projectThreeTags"></div>
                 </div>
               </article>
               <article class="project-item">
                 <div class="project-mark">04</div>
                 <div>
-                  <h3 data-i18n="projectFourTitle">ACT</h3>
-                  <p data-i18n="projectFourDesc">在积木堆叠任务上进行策略复现与调试，重点验证时序控制、末端稳定性与连续动作衔接。</p>
+                  <h3 data-i18n="projectFourTitle">视触觉多模态融合VLA模型部署探索</h3>
+                  <p data-i18n="projectFourDesc">面向OpenPI/PI0.5 VLA模型，开展触觉模态融合接入研究。以物体抓取放置、衣物折叠两大典型居家任务为场景，探索触觉模态的使用，并基于YAM双臂机械臂完成真机部署；通过补充接触维度感知信息，弥补纯视觉方案感知短板，一定程度上提升作业的任务成功率。</p>
                   <div class="project-media">
                     <video controls preload="metadata" playsinline>
                       <source src="assets/videos/04/demo.mp4" type="video/mp4" />
                     </video>
                   </div>
+                  <div class="project-tags" aria-label="Project keywords" data-project-tags="projectFourTags"></div>
                 </div>
               </article>
               <article class="project-item">
                 <div class="project-mark">05</div>
                 <div>
-                  <h3 data-i18n="projectFiveTitle">RL + OpenPI + DAgger</h3>
-                  <p data-i18n="projectFiveDesc">面向 insertion 任务结合强化学习与 DAgger 进行后训练，持续优化真机表现与数据闭环效率。</p>
+                  <h3 data-i18n="projectFiveTitle">首个跨构型视触觉数据集构建（数据集发布当时是全球首个）</h3>
+                  <p data-i18n="projectFiveDesc">与上海某机器人企业对接，探讨并梳理数据集场景定义。依托Gel-Sight视触觉传感器，完成居家、医疗、仓储、商超、厨房五大场景拆解；规范全场景任务范式、细分多级子任务，并沉淀标准化机器人原子操作技能库，为视触觉VLA模型的训练与评测提供高质量数据底座。</p>
                   <div class="project-media">
                     <video controls preload="metadata" playsinline>
                       <source src="assets/videos/05/demo.mp4" type="video/mp4" />
                     </video>
                   </div>
+                  <div class="project-tags" aria-label="Project keywords" data-project-tags="projectFiveTags"></div>
                 </div>
               </article>
               <article class="project-item">
                 <div class="project-mark">06</div>
                 <div>
-                  <h3 data-i18n="projectSixTitle">UMI / 万象套件</h3>
-                  <p data-i18n="projectSixDesc">基于 UMI 与万象套件开展擦拭、花瓶抓放与堆叠等任务，探索无本体数采到真机部署的迁移路径。</p>
+                  <h3 data-i18n="projectSixTitle">基于ACT算法的低成本机械臂策略验证</h3>
+                  <p data-i18n="projectSixDesc">居家小项目：手搓Lerobot的SO-Arm101机械臂，在积木堆叠任务上进行策略复现与调试，重点验证算法在低成本硬件上的时序控制、末端稳定性与连续动作衔接。</p>
                   <div class="project-media">
                     <video controls preload="metadata" playsinline>
                       <source src="assets/videos/06/demo-1.mp4" type="video/mp4" />
@@ -167,13 +172,15 @@
                       <source src="assets/videos/06/demo-2.mp4" type="video/mp4" />
                     </video>
                   </div>
+                  <div class="project-tags" aria-label="Project keywords" data-project-tags="projectSixTags"></div>
                 </div>
               </article>
               <article class="project-item">
                 <div class="project-mark">07</div>
                 <div>
-                  <h3 data-i18n="projectSevenTitle">VT-Touch / Parquet</h3>
-                  <p data-i18n="projectSevenDesc">面向视觉-触觉联合感知的策略探索，关注接触判断、细粒度操作以及跨场景迁移能力。</p>
+                  <h3 data-i18n="projectSevenTitle">真机/仿真混合数据训练范式探究</h3>
+                  <p data-i18n="projectSevenDesc">基于NVIDIA GROOT-N1/N1.5通用机器人基座模型，结合MimicGen自动化数据生成流水线，系统性探究仿真合成数据与真机遥操作数据的融合使用规范。分别完成仿真模型零样本真机部署、不同比例虚实混合数据训练等对照实验，总结适配通用VLA模型的数据配比方案，为高效低成本构建机器人数据集提供标准化方法论。</p>
+                  <div class="project-tags" aria-label="Project keywords" data-project-tags="projectSevenTags"></div>
                 </div>
               </article>
             </div>
