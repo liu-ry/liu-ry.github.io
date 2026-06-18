@@ -51,7 +51,7 @@ const translations = {
     projectTwoTitle: "UMI无本体采集与跨本体迁移方案研发",
     projectTwoDesc:
       "深度参与通用无本体操作采集设备UMI的迭代研发与工程化落地，参与传感器选型、数据同步策略及标准化落盘规则制定。基于UR5e机械臂完成跨本体适配与坐标系对齐方案，探究无本体示教数据向实体机械臂的迁移范式；落地花瓶擦拭、黑板擦拭、方块堆叠、多类物品分拣等多样化实操场景，验证UMI数据在跨本体模仿学习中的泛化能力。",
-    projectTwoTags: ["UMI", "跨本体迁移", "UR", "坐标系", "模仿学习"],
+    projectTwoTags: ["UMI", "跨本体迁移", "UR", "坐标系对齐", "模仿学习"],
     projectThreeTitle: "仿真合成触觉Encoder的精细化操控研究",
     projectThreeDesc:
       "探究仿真合成触觉模态对真机精细模仿学习的增益效果。基于Isasc-lab仿真平台构建大规模合成触觉数据集，针对性训练专属触觉编码Encoder；将预训练触觉Encoder迁移至天机Marvin机械臂+Robtiq夹爪真机环境，赋能Diffusion Policy策略网络，解决高难度USB精密插拔类操作痛点，提升模型对接触状态的感知能力。",
@@ -128,7 +128,7 @@ const translations = {
     projectTwoTitle: "UMI Embodiment-Free Collection and Cross-Embodiment Transfer",
     projectTwoDesc:
       "Deeply participated in the iteration and engineering deployment of UMI, an embodiment-free manipulation data-collection system, including sensor selection, synchronization strategy, and standardized storage rules. Completed cross-embodiment adaptation and coordinate alignment on a UR5e arm, and validated transfer from embodiment-free demonstrations to physical robots across vase wiping, board wiping, block stacking, and item sorting tasks.",
-    projectTwoTags: ["UMI", "Cross-Embodiment", "UR", "Coordinate Frames", "Imitation Learning"],
+    projectTwoTags: ["UMI", "Cross-Embodiment", "UR", "Coordinate Alignment", "Imitation Learning"],
     projectThreeTitle: "Fine Manipulation with Synthetic Tactile Encoders",
     projectThreeDesc:
       "Studied how synthetic tactile modalities can improve fine-grained imitation learning on real robots. Built a large-scale synthetic tactile dataset on the Isasc-lab simulator, trained a dedicated tactile encoder, and transferred it to a Tianji Marvin arm with a Robotiq gripper to enhance a Diffusion Policy network for precise USB insertion and better contact-state awareness.",
