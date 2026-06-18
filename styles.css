@@ -137,8 +137,7 @@ a {
 
 .nav a:hover,
 .social-list a:hover,
-.inline-links a:hover,
-.cv-link:hover {
+.inline-links a:hover {
   color: var(--accent);
 }
 
@@ -249,20 +248,18 @@ h3 {
   flex-wrap: wrap;
   gap: 10px 10px;
   margin: 16px 0 10px;
-  font-size: 15px;
 }
 
-.social-list a {
+.social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 36px;
-  padding: 0 14px;
+  width: 60px;
+  height: 60px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 50%;
   background: color-mix(in srgb, var(--surface) 82%, var(--accent-soft));
-  color: var(--text);
-  font-weight: 600;
+  color: var(--muted);
   box-shadow: 0 8px 18px rgba(31, 31, 27, 0.06);
   transition:
     transform 180ms ease,
@@ -272,32 +269,87 @@ h3 {
     color 180ms ease;
 }
 
-.social-list a::after {
-  content: "↗";
-  margin-left: 8px;
-  font-size: 12px;
-  color: var(--accent);
-  opacity: 0.9;
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.social-list a:hover {
+.social-icon-scholar {
+  background-image: url("assets/images/icon-scholar.svg");
+}
+
+.social-icon-csdn {
+  background-image: url("assets/images/icon-csdn.svg");
+}
+
+.social-icon-xhs {
+  background-image: url("assets/images/icon-xiaohongshu.svg");
+}
+
+.social-icon-github {
+  background-image: url("assets/images/icon-github.svg");
+}
+
+.social-link:hover,
+.social-link:active {
   transform: translateY(-1px);
-  border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
-  background: var(--accent-soft);
   box-shadow: 0 12px 22px rgba(31, 31, 27, 0.1);
-  color: var(--accent);
 }
 
-.social-list a:focus-visible {
+.social-scholar:hover,
+.social-scholar:active {
+  border-color: color-mix(in srgb, #4285f4 48%, var(--line));
+  background: color-mix(in srgb, #4285f4 12%, var(--surface));
+}
+
+.social-scholar:hover .social-icon,
+.social-scholar:active .social-icon {
+  background-image: url("assets/images/icon-scholar-color.svg");
+}
+
+.social-csdn:hover,
+.social-csdn:active {
+  border-color: color-mix(in srgb, #fc5531 48%, var(--line));
+  background: color-mix(in srgb, #fc5531 12%, var(--surface));
+}
+
+.social-csdn:hover .social-icon,
+.social-csdn:active .social-icon {
+  background-image: url("assets/images/icon-csdn-color.svg");
+}
+
+.social-xhs:hover,
+.social-xhs:active {
+  border-color: color-mix(in srgb, #ff2442 48%, var(--line));
+  background: color-mix(in srgb, #ff2442 12%, var(--surface));
+}
+
+.social-xhs:hover .social-icon,
+.social-xhs:active .social-icon {
+  background-image: url("assets/images/icon-xiaohongshu-color.svg");
+}
+
+.social-github:hover,
+.social-github:active {
+  border-color: color-mix(in srgb, #24292f 48%, var(--line));
+  background: color-mix(in srgb, #24292f 10%, var(--surface));
+}
+
+.social-github:hover .social-icon,
+.social-github:active .social-icon {
+  background-image: url("assets/images/icon-github-color.svg");
+}
+
+.social-link:focus-visible {
   outline: 2px solid color-mix(in srgb, var(--accent) 55%, white);
   outline-offset: 2px;
-}
-
-.cv-link {
-  display: inline-block;
-  margin-bottom: 18px;
-  color: var(--accent);
-  font-weight: 700;
 }
 
 .sidebar-card,
@@ -396,16 +448,21 @@ h3 {
 
 .project-media {
   margin-top: 14px;
+  width: 100%;
+  max-width: 720px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 2px);
+  background: #000;
+  box-shadow: var(--shadow);
 }
 
 .project-media video {
   display: block;
   width: 100%;
-  max-width: 720px;
-  border: 1px solid var(--line);
-  border-radius: calc(var(--radius) - 2px);
+  height: auto;
+  max-height: min(72vh, 560px);
   background: #000;
-  box-shadow: var(--shadow);
 }
 
 .project-tags {
@@ -522,14 +579,41 @@ h3 {
   background: var(--surface);
 }
 
-:root[data-style="tech"] .social-list a {
+:root[data-style="tech"] .social-link {
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
 
-:root[data-style="tech"] .social-list a:hover {
-  background: rgba(255, 122, 41, 0.12);
+:root[data-style="tech"] .social-link:hover,
+:root[data-style="tech"] .social-link:active {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+}
+
+:root[data-style="tech"] .social-scholar:hover,
+:root[data-style="tech"] .social-scholar:active {
+  background: rgba(66, 133, 244, 0.16);
+}
+
+:root[data-style="tech"] .social-csdn:hover,
+:root[data-style="tech"] .social-csdn:active {
+  background: rgba(252, 85, 49, 0.16);
+}
+
+:root[data-style="tech"] .social-xhs:hover,
+:root[data-style="tech"] .social-xhs:active {
+  background: rgba(255, 36, 66, 0.16);
+}
+
+:root[data-style="tech"] .social-github:hover,
+:root[data-style="tech"] .social-github:active {
+  background: rgba(240, 246, 252, 0.16);
+  border-color: rgba(240, 246, 252, 0.4);
+}
+
+:root[data-style="tech"] .social-github:hover .social-icon,
+:root[data-style="tech"] .social-github:active .social-icon {
+  background-image: url("assets/images/icon-github.svg");
+  filter: brightness(1.9);
 }
 
 :root[data-style="tech"] .project-tag {
@@ -587,6 +671,15 @@ h3 {
 
   .publication {
     grid-template-columns: 1fr;
+  }
+
+  .project-item {
+    grid-template-columns: 1fr;
+  }
+
+  .project-mark {
+    width: 40px;
+    height: 40px;
   }
 
   .project-tag {

@@ -53,12 +53,19 @@
           <p class="meta-line" data-i18n="email">renyu6708@gmail.com</p>
 
           <div class="social-list">
-            <a href="https://scholar.google.com/citations?user=zMzItEcAAAAJ&hl=en" target="_blank" rel="noreferrer">Scholar</a>
-            <a href="https://blog.csdn.net/qq_43361250?type=blog" target="_blank" rel="noreferrer">CSDN</a>
-            <a href="https://xhslink.com/m/83AZLfBgo3j" target="_blank" rel="noreferrer">小红书</a>
+            <a class="social-link social-scholar" href="https://scholar.google.com/citations?user=zMzItEcAAAAJ&hl=en" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar">
+              <span class="social-icon social-icon-scholar" aria-hidden="true"></span>
+            </a>
+            <a class="social-link social-csdn" href="https://blog.csdn.net/qq_43361250?type=blog" target="_blank" rel="noreferrer" aria-label="CSDN" title="CSDN">
+              <span class="social-icon social-icon-csdn" aria-hidden="true"></span>
+            </a>
+            <a class="social-link social-xhs" href="https://xhslink.com/m/83AZLfBgo3j" target="_blank" rel="noreferrer" aria-label="小红书" title="小红书">
+              <span class="social-icon social-icon-xhs" aria-hidden="true"></span>
+            </a>
+            <a class="social-link social-github" href="https://github.com/liu-ry" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+              <span class="social-icon social-icon-github" aria-hidden="true"></span>
+            </a>
           </div>
-
-          <a class="cv-link" href="#" data-i18n="cvLink">Curriculum Vitae</a>
 
           <div class="sidebar-card">
             <p data-i18n="focusText">
@@ -112,7 +119,12 @@
                   <p data-i18n="projectTwoDesc">深度参与通用无本体操作采集设备UMI的迭代研发与工程化落地，参与传感器选型、数据同步策略及标准化落盘规则制定。基于UR5e机械臂完成跨本体适配与坐标系对齐方案，探究无本体示教数据向实体机械臂的迁移范式；落地花瓶擦拭、黑板擦拭、方块堆叠、多类物品分拣等多样化实操场景，验证UMI数据在跨本体模仿学习中的泛化能力。</p>
                   <div class="project-media">
                     <video controls preload="metadata" playsinline>
-                      <source src="assets/videos/02/demo.mp4" type="video/mp4" />
+                      <source src="assets/videos/02/demo-1.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/02/demo-2.mp4" type="video/mp4" />
                     </video>
                   </div>
                   <div class="project-tags" aria-label="Project keywords" data-project-tags="projectTwoTags"></div>
@@ -149,11 +161,6 @@
                 <div>
                   <h3 data-i18n="projectFiveTitle">首个跨构型视触觉数据集构建（数据集发布当时是全球首个）</h3>
                   <p data-i18n="projectFiveDesc">与上海某机器人企业对接，探讨并梳理数据集场景定义。依托Gel-Sight视触觉传感器，完成居家、医疗、仓储、商超、厨房五大场景拆解；规范全场景任务范式、细分多级子任务，并沉淀标准化机器人原子操作技能库，为视触觉VLA模型的训练与评测提供高质量数据底座。</p>
-                  <div class="project-media">
-                    <video controls preload="metadata" playsinline>
-                      <source src="assets/videos/05/demo.mp4" type="video/mp4" />
-                    </video>
-                  </div>
                   <div class="project-tags" aria-label="Project keywords" data-project-tags="projectFiveTags"></div>
                 </div>
               </article>
@@ -164,12 +171,7 @@
                   <p data-i18n="projectSixDesc">居家小项目：手搓Lerobot的SO-Arm101机械臂，在积木堆叠任务上进行策略复现与调试，重点验证算法在低成本硬件上的时序控制、末端稳定性与连续动作衔接。</p>
                   <div class="project-media">
                     <video controls preload="metadata" playsinline>
-                      <source src="assets/videos/06/demo-1.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div class="project-media">
-                    <video controls preload="metadata" playsinline>
-                      <source src="assets/videos/06/demo-2.mp4" type="video/mp4" />
+                      <source src="assets/videos/06/demo.mp4" type="video/mp4" />
                     </video>
                   </div>
                   <div class="project-tags" aria-label="Project keywords" data-project-tags="projectSixTags"></div>
@@ -180,6 +182,11 @@
                 <div>
                   <h3 data-i18n="projectSevenTitle">真机/仿真混合数据训练范式探究</h3>
                   <p data-i18n="projectSevenDesc">基于NVIDIA GROOT-N1/N1.5通用机器人基座模型，结合MimicGen自动化数据生成流水线，系统性探究仿真合成数据与真机遥操作数据的融合使用规范。分别完成仿真模型零样本真机部署、不同比例虚实混合数据训练等对照实验，总结适配通用VLA模型的数据配比方案，为高效低成本构建机器人数据集提供标准化方法论。</p>
+                  <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/07/demo.mp4" type="video/mp4" />
+                    </video>
+                  </div>
                   <div class="project-tags" aria-label="Project keywords" data-project-tags="projectSevenTags"></div>
                 </div>
               </article>

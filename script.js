@@ -12,7 +12,6 @@ const translations = {
     affiliation: "中国 江苏 苏州",
     education: "苏州大学 电子与通信工程硕士",
     email: "renyu6708@gmail.com",
-    cvLink: "Curriculum Vitae",
     focusText:
       "关注视觉算法、diffusion、VLA、WM\n关注视触觉/力觉等模态的应用\n关注 UMI、EGO 等数采形式以及跨本体研究进展。",
     introOne:
@@ -88,7 +87,6 @@ const translations = {
     affiliation: "Suzhou, Jiangsu, China",
     education: "M.Eng. in Electronics and Communication Engineering, Soochow University",
     email: "renyu6708@gmail.com",
-    cvLink: "Curriculum Vitae",
     focusText:
       "Interested in vision algorithms, diffusion, VLA, and WM\nInterested in vision-tactile, force-aware, and related multimodal applications\nInterested in UMI, EGO, and progress in cross-embodiment data collection",
     introOne:
@@ -159,8 +157,8 @@ const root = document.documentElement;
 const langButtons = document.querySelectorAll(".lang-btn");
 const styleButtons = document.querySelectorAll(".style-btn");
 
-const savedLang = localStorage.getItem("language") || "zh";
-const savedStyle = localStorage.getItem("page_style") || "tech";
+const defaultLang = "zh";
+const defaultStyle = "tech";
 
 function setActiveButtons(buttons, activeValue, attributeName) {
   buttons.forEach((button) => {
@@ -199,13 +197,11 @@ function applyLanguage(language) {
   });
 
   setActiveButtons(langButtons, language, "lang");
-  localStorage.setItem("language", language);
 }
 
 function applyStyle(style) {
   root.dataset.style = style;
   setActiveButtons(styleButtons, style, "style");
-  localStorage.setItem("page_style", style);
 }
 
 langButtons.forEach((button) => {
@@ -220,5 +216,5 @@ styleButtons.forEach((button) => {
   });
 });
 
-applyLanguage(savedLang);
-applyStyle(savedStyle);
+applyLanguage(defaultLang);
+applyStyle(defaultStyle);
