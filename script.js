@@ -218,3 +218,47 @@ styleButtons.forEach((button) => {
 
 applyLanguage(defaultLang);
 applyStyle(defaultStyle);
+
+let scrollFrame = 0;
+
+function updateScrollProgress() {
+  scrollFrame = 0;
+  const scrollRange = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+  const progress = Math.min(Math.max(window.scrollY / scrollRange, 0), 1) * 100;
+  root.style.setProperty("--scroll-progress", `${progress.toFixed(2)}%`);
+}
+
+function requestScrollProgressUpdate() {
+  if (!scrollFrame) {
+    scrollFrame = window.requestAnimationFrame(updateScrollProgress);
+  }
+}
+
+window.addEventListener("scroll", requestScrollProgressUpdate, { passive: true });
+window.addEventListener("resize", requestScrollProgressUpdate, { passive: true });
+requestScrollProgressUpdate();
+
+{
+  let pointerFrame = 0;
+  let pointerX = 18;
+  let pointerY = 8;
+
+  window.addEventListener(
+    "pointermove",
+    (event) => {
+      pointerX = (event.clientX / window.innerWidth) * 100;
+      pointerY = (event.clientY / window.innerHeight) * 100;
+
+      if (pointerFrame) {
+        return;
+      }
+
+      pointerFrame = window.requestAnimationFrame(() => {
+        root.style.setProperty("--pointer-x", `${pointerX.toFixed(2)}%`);
+        root.style.setProperty("--pointer-y", `${pointerY.toFixed(2)}%`);
+        pointerFrame = 0;
+      });
+    },
+    { passive: true },
+  );
+}
