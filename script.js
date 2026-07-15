@@ -58,7 +58,7 @@ const translations = {
     projectThreeTags: ["Diffusion Policy", "USB精细插拔", "触觉Encoder", "模仿学习"],
     projectFourTitle: "视触觉多模态融合VLA模型部署探索",
     projectFourDesc:
-      "面向OpenPI/PI0.5 VLA模型，开展触觉模态融合接入研究。以物体抓取放置、衣物折叠两大典型居家任务为场景，探索触觉模态的使用，并基于YAM双臂机械臂完成真机部署；通过补充接触维度感知信息，弥补纯视觉方案感知短板，一定程度上提升作业的任务成功率。",
+      "面向OpenPI/PI0.5 VLA模型，开展触觉模态融合接入研究。以peg-in-hole、衣物折叠、纸杯堆叠三个任务为场景，探索触觉模态的使用，并基于YAM双臂、珞石双臂完成真机部署；通过补充接触维度感知信息，弥补纯视觉方案感知短板，一定程度上提升作业的任务成功率。",
     projectFourTags: ["OpenPI", "PI0.5", "双臂遥操作", "精细插拔", "VLA"],
     projectFiveTitle: "首个跨构型视触觉数据集构建（数据集发布当时是全球首个）",
     projectFiveDesc:
@@ -135,7 +135,7 @@ const translations = {
     projectThreeTags: ["Diffusion Policy", "USB Insertion", "Tactile Encoder", "Imitation Learning"],
     projectFourTitle: "Multimodal Vision-Tactile VLA Deployment",
     projectFourDesc:
-      "Explored tactile-modality integration for OpenPI and PI0.5 VLA models. Focused on household tasks such as pick-and-place and cloth folding, and deployed the multimodal setup on a YAM dual-arm robot. The added contact-aware signals helped compensate for the perception limits of vision-only pipelines and improved task success rates.",
+      "Explored tactile-modality integration for OpenPI and PI0.5 VLA models across three tasks: peg-in-hole, garment folding, and paper-cup stacking. Deployed the multimodal system on both YAM and ROKAE dual-arm robots. The added contact-aware signals helped compensate for the perceptual limitations of vision-only approaches and improved task success rates to some extent.",
     projectFourTags: ["OpenPI", "PI0.5", "Dual-Arm Teleop", "Precise Insertion", "VLA"],
     projectFiveTitle: "First Cross-Configuration Vision-Tactile Dataset Construction (First of Its Kind Globally at Release)",
     projectFiveDesc:
