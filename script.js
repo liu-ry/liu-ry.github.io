@@ -21,7 +21,7 @@ const translations = {
     introThree:
       "当前正在探索真机强化学习后训练，以提升任务成功率，实现人类在环(DAgger介入)的数据飞轮闭环。",
     flywheelKicker: "ROBOT LEARNING · POLICY ITERATION",
-    flywheelTitle: "技能闭环",
+    flywheelTitle: "经验地图",
     flywheelSummary:
       "数据集搭建、数据管线搭建、模型训练、真机部署与真机强化学习依次构成持续迭代的完整闭环。",
     flywheelCenterTitle: "技能闭环",
@@ -112,7 +112,7 @@ const translations = {
     introThree:
       "I am currently exploring post-training with real-world reinforcement learning to improve task success rates and build a human-in-the-loop data flywheel with DAgger intervention.",
     flywheelKicker: "ROBOT LEARNING · POLICY ITERATION",
-    flywheelTitle: "Skill Closed Loop",
+    flywheelTitle: "Experience Map",
     flywheelSummary:
       "Dataset construction, data pipeline construction, model training, real-robot deployment, and real-robot reinforcement learning form a complete, continuously improving loop.",
     flywheelCenterTitle: "SKILL CLOSED LOOP",
